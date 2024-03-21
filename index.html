@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibek Khattri</title>
+    <style>
+        .project-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .project-box {
+            flex: 1;
+            background: #2980b9;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        </style>
 </head>
 <body>
 
     <h1 style="color: #3498db; padding: 10px;">Hey there! I'm Bibek Khattri</h1>
 
-    <div style="background: #5dade2;  color: #ffffff; border-radius: 30px;">
+    <div style="background: #5dade2;  color: #ffffff; border-radius: 30px; margin: 0 33px;">
         <div style="background: #2980b9; padding: 10px; border-radius: 30px;">
             <h2 style="color: #ffffff;">A little bit about me:</h2>
         </div>
@@ -30,10 +58,27 @@
 
             <p style=" font-size: 18px;"> Soon... after the Adobe project, I decided to pursue research...</p>
             <p style=" font-size: 18px;"> Some of my current works are shown below </p>
-
-
         </div>
     </div>
 
+    <div class="project-container">
+        <div class="project-box">
+            <img src="project1_image_url" alt="Project 1 Image" class="project-image">
+            <div class="project-title">Sakura</div>
+            <div class="project-description">Description of project 1 goes here...</div>
+        </div>
+
+        <div class="project-box">
+            <img src="project2_image_url" alt="Project 2 Image" class="project-image">
+            <div class="project-title">ARRT</div>
+            <div class="project-description">Description of project 2 goes here...</div>
+        </div>
+
+        <div class="project-box">
+            <img src="project3_image_url" alt="Project 3 Image" class="project-image">
+            <div class="project-title">Research Study</div>
+            <div class="project-description">Description of project 3 goes here...</div>
+        </div>
+    </div>
 </body>
 </html>
