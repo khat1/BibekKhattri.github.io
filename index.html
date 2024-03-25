@@ -10,16 +10,18 @@
             justify-content: space-between;
             margin-top: 20px;
             padding: 0 20px;
+
         }
 
         .project-box {
-            flex: 1;
-            background: #2980b9;
+            flex-basis: calc(33.33% - 20px);
+            background: #81c7f5;
             color: #ffffff;
             border-radius: 10px;
             padding: 20px;
             margin: 0 10px;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .project-title {
@@ -31,24 +33,32 @@
             font-size: 18px;
             line-height: 1.5;
         }
-        
-        .project-image {
-            width: 100%; /* Set the width to 100% to make all images the same size */
-            height: auto; /* Maintain aspect ratio */
 
+        .project-image {
+            width: 100%;
+            height: auto;
             margin-bottom: 20px;
         }
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+          .project-container {
+              display: block;
+          }
+        }
+
+      
     </style>
 </head>
 <body>
 
-    <h1 style="color: #3498db; padding: 10px;">Hey there! I'm Bibek Khattri</h1>
+    <h1 style="color: #3498db; padding-left:40px;">Bibek Khattri</h1>
 
-    <div style="background: #5dade2;  color: #ffffff; border-radius: 30px; margin: 0 33px;">
-        <div style="background: #2980b9; padding: 10px; border-radius: 30px;">
-            <h2 style="color: #ffffff;">A little bit about me:</h2>
+    <div style="background: #81c7f5;  color: #ffffff; border-radius: 30px; margin: 0 33px;">
+        <div style="background: #30a5f1; padding: 10px; border-radius: 16px;">
+            <h2 style="color: #ffffff;">Little About me)</h2>
         </div>
-        <div style="height: 400px; padding: 20px;">
+        <div style="padding: 20px;">
             <p style=" font-size: 18px;">
                 I'm pursuing my PhD at the <a href="https://www.bcu.ac.uk/computing/research/digital-media-technology" style="color: #ffffff;">Digital Media Technology Lab</a>
                 in Birmingham City University. My research focuses on understanding collaboration in AR Environments.
